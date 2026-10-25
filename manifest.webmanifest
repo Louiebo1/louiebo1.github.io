@@ -1,0 +1,10 @@
+{
+  "name": "Boczek Family Card Games",
+  "short_name": "Card Games",
+  "description": "Hearts, Cribbage, 500, Gin Rummy and Pinochle.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b3d22",
+  "theme_color": "#0b3d22",
+  "icons": [{ "src": "img/icon.png", "sizes": "512x512", "type": "image/png" }]
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b3d22">
+  <meta name="description" content="The Boczek family's card games: Hearts, Cribbage, 500, Gin Rummy and Pinochle — play the computer or friends online.">
+  <title>Boczek Family Card Games</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <style>
+    :root { --cream: #fdf6e3; --gold: #ffd98a; --tile: rgba(0, 0, 0, 0.32); --tile-hover: rgba(0, 0, 0, 0.45); }
+    * { box-sizing: border-box; }
+    html { color-scheme: dark; }
+    body {
+      margin: 0; min-height: 100vh; color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b3d22 url("img/felt.jpg") center / cover fixed;
+      padding: max(40px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom));
+    }
+    main { max-width: 760px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 28px; }
+    .suits { font-size: 26px; letter-spacing: 10px; opacity: 0.9; }
+    .suits .red { color: #e05a4f; }
+    h1 { font: 700 clamp(34px, 7vw, 48px) Georgia, "Times New Roman", serif; margin: 6px 0 4px; text-shadow: 0 2px 4px #0006; line-height: 1.1; }
+    .tag { font: italic 600 17px Georgia, serif; opacity: 0.8; margin: 0; }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+    a.game {
+      display: flex; align-items: center; gap: 16px; padding: 14px; border-radius: 18px;
+      background: var(--tile); color: inherit; text-decoration: none;
+      box-shadow: 0 2px 8px #0004; transition: background 0.15s, transform 0.15s;
+    }
+    a.game:hover, a.game:focus-visible { background: var(--tile-hover); transform: translateY(-2px); outline: none; }
+    a.game:focus-visible { box-shadow: 0 0 0 3px var(--gold); }
+    a.game img { width: 76px; height: 76px; border-radius: 17px; flex: none; box-shadow: 0 2px 6px #0006; }
+    .name { font: 700 24px Georgia, serif; }
+    .about { font-size: 15px; opacity: 0.85; margin-top: 3px; line-height: 1.35; }
+    .go { margin-left: auto; color: var(--gold); font-size: 26px; flex: none; }
+    footer { text-align: center; margin-top: 28px; font-size: 14px; opacity: 0.75; line-height: 1.5; }
+    @media (max-width: 380px) {
+      ul { grid-template-columns: 1fr; }
+      a.game img { width: 64px; height: 64px; border-radius: 14px; }
+      .name { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="suits" aria-hidden="true">♠<span class="red">♥</span>♣<span class="red">♦</span></div>
+      <h1>Boczek Family Card Games</h1>
+      <p class="tag">Play the computer, or friends and family online</p>
+    </header>
+    <ul>
+      <li><a class="game" href="hearts/"><img src="img/hearts.png" alt=""><div><div class="name">Hearts</div><div class="about">4 players · dodge the hearts and the Q♠</div></div><span class="go" aria-hidden="true">›</span></a></li>
+      <li><a class="game" href="pinochle/"><img src="img/pinochle.png" alt=""><div><div class="name">Pinochle</div><div class="about">3 players · bid, meld and take tricks</div></div><span class="go" aria-hidden="true">›</span></a></li>
+      <li><a class="game" href="fivehundred/"><img src="img/fivehundred.png" alt=""><div><div class="name">500</div><div class="about">4 players in two teams · bid your tricks</div></div><span class="go" aria-hidden="true">›</span></a></li>
+      <li><a class="game" href="cribbage/"><img src="img/cribbage.png" alt=""><div><div class="name">Cribbage</div><div class="about">2 players · fifteens, pegging and the crib</div></div><span class="go" aria-hidden="true">›</span></a></li>
+      <li><a class="game" href="gin/"><img src="img/gin.png" alt=""><div><div class="name">Gin Rummy</div><div class="about">2 players · knock or go gin</div></div><span class="go" aria-hidden="true">›</span></a></li>
+    </ul>
+    <footer>Every game works on a phone, tablet or computer.<br>On an iPhone or iPad, tap Share → Add to Home Screen to keep one handy.</footer>
+  </main>
+</body>
+</html>
