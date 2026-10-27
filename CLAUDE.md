@@ -8,3 +8,5 @@ their own repos at /hearts, /pinochle, /fivehundred, /cribbage, /gin.
 - `img/` — each game's icon (256 px copies of that repo's `img/icon.png`), the felt from
   Pinochle, and `icon.png` (the four suits on felt, drawn in headless Chrome from HTML).
 - Adding a game: copy its icon to `img/`, add an `<li>`, push.
+- `docs/ARCHITECTURE.md` + `docs/architecture.png` — how all five games work (hosting, the
+  shared Firebase tables, the host pattern); Louie made the diagram in ChatGPT 2026-10-27.
