@@ -15,3 +15,6 @@ their own repos at /hearts, /pinochle, /fivehundred, /cribbage, /gin, /holdem (a
   Name + stats per person at `/users/UID` in hearts-659fc; rules in
   `~/code/hearts-web/database.rules.json` (private per user; tables unchanged). Needs, in
   the Firebase console: Google provider on, `louiebo1.github.io` an authorized domain.
+- `shared/handdrag.js` — drag a card sideways in your hand (2026-11-11). Same rule as
+  account.js: edit here, copy to `js/handdrag.js` in hearts, fivehundred, pinochle, cribbage.
+  (Not gin: its hand is laid out in melds. Not holdem: two cards.)
